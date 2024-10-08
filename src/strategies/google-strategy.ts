@@ -19,7 +19,8 @@ passport.use(
     {
       clientID: process.env.GOOGLE_CLIENT_ID!,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
-      callbackURL: "http://localhost:8000/auth/callback/google",
+      callbackURL:
+        "https://nexar-production-server.onrender.com/auth/callback/google",
       passReqToCallback: true,
     },
     async (
