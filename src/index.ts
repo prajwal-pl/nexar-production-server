@@ -20,7 +20,7 @@ const app = express();
 dotenv.config();
 app.use(
   cors({
-    origin: ["https://nexar-production.vercel.app", "http://localhost:3001"], // Replace with your frontend URL
+    origin: ["https://nexar-production.vercel.app", "http://localhost:3000"], // Replace with your frontend URL
     credentials: true, // Allow credentials (cookies) to be sent
   })
 );
