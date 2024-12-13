@@ -46,11 +46,11 @@ export const createProject = async (
       data: {
         name,
         description,
-        startDate,
-        endDate,
+        startDate: new Date(startDate),
+        endDate: new Date(endDate),
       },
     });
-    res.json(project);
+    res.status(201).json(project);
   } catch (error: any) {
     res
       .status(500)
